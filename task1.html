@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Typing</title>
+    </head>
+    <body>
+        <input type="text" id="inputbox" onkeyup="update()"><br>
+        <br>
+        <!--<button onclick="update()">Type</button><br>-->
+        <br>
+        <h1 id="result" >KO</h1>
+        <script>
+            var inputbox = document.getElementById("inputbox");
+            var result = document.getElementById("result");
+
+            function update(){
+              //result.textContent = inputbox.value;
+              document.getElementById("result").innerHTML = inputbox.value;
+            }
+        </script>
+
+    </body>
+</html>
